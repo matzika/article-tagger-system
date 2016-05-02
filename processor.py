@@ -1,8 +1,9 @@
+"""
+Created on Sat Jan  9 09:52:05 2016
 
-####### Documents Processor #######
-#Author: Katerina Iliakopoulou
-#email: ai2315@columbia.edu
-
+@author: Katerina Iliakopoulou
+@email: ai2315@columbia.edu
+"""
 
 import sys
 import os
@@ -15,10 +16,12 @@ import inspect
   
 from nltk.corpus import stopwords
 
-#The Processor processes text by removing
+"""
+The Processor processes text by removing
 #words that carry no or little contextual 
 #information and keeping only those that can
-#contribute to NLP. 
+contribute to NLP.
+""" 
 class Processor(object):
 
 	def process(self,content):

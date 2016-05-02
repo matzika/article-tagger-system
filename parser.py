@@ -1,7 +1,10 @@
 
-####### Documents Parser #######
-#Author: Katerina Iliakopoulou
-#email: ai2315@columbia.edu
+"""
+Created on Sat Jan  9 09:52:05 2016
+
+@author: Katerina Iliakopoulou
+@email: ai2315@columbia.edu
+"""
 
 
 import sys
@@ -17,9 +20,11 @@ from bs4 import BeautifulSoup
 from time import time as tm
 from processor import Processor
 
+"""
+The Parser parses html documents 
+and extracts the article's body.
+"""
 
-# The Parser parses html documents 
-# and extracts the article's body. 
 class Parser(object):
 	def __init__(self,output):
 		self.p = Processor()
