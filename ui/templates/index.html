@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" type="text/css" charset="utf-8" />
+		<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css" /></noscript> 
+
+		<title>News Tagger</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta HTTP-EQUIV="X-UA-COMPATIBLE" CONTENT="IE=EmulateIE9" >
+    	
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    	<script type="text/javascript" src='js/script.js'></script>
+
+    	<link rel="shortcut icon" href="favicon.png" type="image/x-icon" /> 
+
+	</head>
+	<body>
+		<div id="header"><div class="header-name">News Tagger</div></div>
+		<div id="index-area"></div>
+		<textarea id="article" rows="10" cols="30" class="trial-text">Insert article here...</textarea>
+		<div id="mark-area">
+			<div id="selected-area">
+				<div class="head">
+					<div class="head-name">Selected Tags</div>
+				</div>
+				<input id="add-tag-area" placeholder="Type a new tag here"></input>
+				<button id="add-tag-area-button" class="button" onclick="add_tag()">ADD</button>
+				<div id="selected-tags" placeholder="Drag and drop selected tags here"></div>
+			</div>
+			<div id="tags-area">
+				<div class="sub-head">
+					<div class="sub-head-name">Suggested Tags</div>
+				</div>
+				<div class="display-buttons" align='center'>
+  					<input id="people" type="checkbox" name="field" value="people" style="padding: 10px;">
+  					<label><span><span></span></span>People</label>
+  					<input id="orgs" type="checkbox" name="field" value="orgs" style="padding: 10px;">
+  					<label><span><span></span></span>Organizations</label>
+  					<input id="locations" type="checkbox" name="field" value="locs" style="padding: 10px;">
+  					<label for="locations"><span><span></span></span>Locations</label>
+  					<input id="categories" type="checkbox" name="field" value="categories" style="padding: 10px;">
+  					<label for="categories"><span><span></span></span>Categories</label> 
+  				</div>
+				<div id="suggested-tags" placeholder="Drag and drop selected tags here"></div>
+				<div id="loader-button"><u>Load More</u></div>
+			</div>
+		</div>
+	</body>
+</html>
