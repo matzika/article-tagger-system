@@ -108,6 +108,9 @@ class Parser(object):
 
 		return entities
 
+	def parse_plain_text(self,text):
+		return self.p.process(text).rstrip()
+
 
 if __name__ == "__main__":
 	if len(sys.argv) < 4:

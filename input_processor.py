@@ -14,7 +14,7 @@ import operator
 import re
 
 from time import time
-from articles_parser import Parser
+from parser import Parser
 
 
 """
